@@ -14,11 +14,9 @@ class PVDataset_forAdap(CustomDataset):
         split (str): Split txt file for domain A of Potsdam and Vaihingen dataset .
     """
 
-    CLASSES = ('impervious_surface', 'building', 'low_vegetation', 'tree',
-               'car', 'clutter')
+    CLASSES = ('impervious_surface', 'building')
 
-    PALETTE = [[255, 255, 255], [0, 0, 255], [0, 255, 255], [0, 255, 0],
-               [255, 255, 0], [255, 0, 0]]
+    PALETTE = [[255, 255, 255], [0, 0, 255]]
 
     def __init__(self, 
                  split, 
